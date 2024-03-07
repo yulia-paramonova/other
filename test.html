@@ -33,7 +33,7 @@
 	function updateURL(vaMsgObj)
 	{
 		if (vaMsgObj && vaMsgObj.data && vaMsgObj.rowCount === 1) {
-			document.getElementById("target_url").src = "https://en.wikipedia.org/wiki/"+vaMsgObj.data[0][0];
+			document.getElementById("target_url").src = vaMsgObj.data[0][0];
 		}
 		else {
 			document.getElementById("target_url").src = "";
